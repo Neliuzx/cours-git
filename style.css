@@ -10,6 +10,10 @@ body {
     background-color: #1a1a1a;
 }
 
+img{
+    width: 240;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -72,4 +76,104 @@ body {
 .login-btn:hover {
     color: #ffffff;
     transform: scale(1.1);
+}
+.hero {
+    position: relative;
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+                url('https://cms-static-prod.ros.rockstargames.com/images/18izrhn535ym/yt5txJLGfyA6Bo34uXQp2/3023fbffbec248a02dbff2f8db9c56a9/SMVkFx9J3pSDLT4kwici3.jpg?w=1920&fm=webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 620px;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(255, 0, 128, 0.15);
+    border: 1px solid #ff007f;
+    color: #ff66cc;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-size: 3.8rem;
+    font-weight: 900;
+    line-height: 1.05;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-title .highlight {
+    background: linear-gradient(45deg, #ff007f, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #cecccf;
+    margin-bottom: 36px;
+    text-transform: none;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #ff007f, #7928ca);
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(255, 0, 127, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 127, 0.6);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    transform: translateY(-3px);
 }
